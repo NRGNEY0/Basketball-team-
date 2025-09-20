@@ -1,0 +1,30 @@
+.Navbar{
+    border-bottom: 1px solid black;
+    height: 100px;
+    width: 102%;
+    background-color: darkgrey;
+    margin-top: -15px;
+   
+    
+}
+
+.hori{
+    list-style-type: none; /* removes bullet points */
+    display: flex; /*This makes  */
+    gap: 33px;
+    
+}
+
+.menu{
+    margin-top: 40px;
+    font-weight: 500;
+
+}
+
+a{
+    text-decoration: none; /* Removes all the underlines */
+    color: black;
+    font-size: larger;
+}
+
+
