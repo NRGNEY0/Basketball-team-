@@ -1,11 +1,15 @@
 .Navbar{
     border-bottom: 1px solid black;
     height: 100px;
-    width: 102%;
-    background-color: darkgrey;
+    max-width: 106%;
+    background-color: grey;
     margin-top: -15px;
+    margin-left: -8px;
    
     
+}
+.logo{
+    margin-left: -35px;
 }
 
 .hori{
@@ -22,9 +26,16 @@
 }
 
 a{
-    text-decoration: none; /* Removes all the underlines */
+    text-decoration: none; /* Removes all the underlines from all anchor tags*/
     color: black;
     font-size: larger;
 }
 
+li a:hover{
+    color: whitesmoke;
+}
+
+img{
+    border-radius: 50%;
+}
 
