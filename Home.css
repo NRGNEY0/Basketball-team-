@@ -1,3 +1,13 @@
+body{
+    background-image: url(professional-basketball-arena-made-3d-600nw-1512115049.jpg.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; /* doesent create the tile effect */
+    background-attachment: fixed; /* This makes the image stay still and doesent scroll when the user does */
+
+    
+}
+
 .Navbar{
     border-bottom: 1px solid black;
     height: 100px;
@@ -39,3 +49,14 @@ img{
     border-radius: 50%;
 }
 
+
+.intro{
+    color: whitesmoke;
+    text-align: center;
+}
+
+.speech{
+    font-size: x-large;
+}
+
+/* Continue with the login div to make username and password on seperate lines */
