@@ -7,15 +7,43 @@
     <link rel="stylesheet" href="Login.css">
 </head>
 <body>
+<!--Navbar to hold all the menu items-->
+<div class="Navbar">
+    <ul class="hori">
+       <li class="logo" >
+        <a href="Home.htm"> 
+            <img src="Bball logo.jpeg" style="width: 100px;height: 100px;" > <!--The image when clicked will redirect the user back to the home page-->
+        </a>
+       </li>
+
+       <li class="menu"> 
+        <a href="Register.htm">Register</a> 
+       </li>
+
+       <li class="menu">
+        <a href="Login.htm" class="active">Login</a>
+       </li>
+
+       <li class="menu">
+        <a href="Contact.htm"> Contact us</a>
+       </li>
+    </ul>
+</div>
+
+
+
+
+
     <!--This will be the login form and if the user doesent have an account it wiill tell them to sign up -->
+    <h1 class="head">Login</h1>
     <div class="login">
         <label for="Username"> Username </label>
-        <input type="text" id="Username" placeholder="Enter Username">
+        <input type="text" id="Username" placeholder="Enter Username">  <!-- Using an ID for both username and html tags so that will be referred to when using javascript-->
 
         <label for="Password"> Password</label>
         <input type="text" id="password" placeholder="Enter Password">
         
-        
-    </div>
+        <p>Dont have an account? <a href="Register.htm" class="a">Sign up</a></p> <!--Redirects the user to the register page if they dont have an account -->
+    </div> 
 </body>
 </html>

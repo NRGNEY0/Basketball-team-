@@ -1,0 +1,84 @@
+body{
+    background-image: url(/professional-basketball-arena-made-3d-600nw-1512115049.jpg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+
+.Navbar{
+    border-bottom: 1px solid black;
+    height: 100px;
+    max-width: 106%;
+    background-color: grey;
+    margin-top: -15px;
+    margin-left: -8px;
+   
+    
+}
+.logo{
+    margin-left: -35px;
+}
+
+.hori{
+    list-style-type: none; /* removes bullet points */
+    display: flex; /*This makes  */
+    gap: 33px;
+    
+}
+
+.menu{
+    margin-top: 40px;
+    font-weight: 500;
+
+}
+
+a{
+    text-decoration: none; /* Removes all the underlines from all anchor tags*/
+    color: black;
+    font-size: larger;
+}
+
+li a:hover{
+    color: whitesmoke;
+}
+
+img{
+    border-radius: 50%;
+}
+
+.active{
+    color: orange;
+}
+
+.login{
+    display: flex;
+    flex-direction: column; /* Makes items stack vertically */
+    gap: 10px; /* seperation between children elements */
+    border: 1px solid beige;
+    width: 30%;
+    margin: auto;
+    margin-top: 13em;
+    color: white;
+    padding: 8px;
+}
+
+.login input{
+    flex: 1; /* makes each element grow to fill the space equally */
+    min-width: 150px; /* optional: prevents them from getting too small */
+    height: 40px; /* increases height */
+    font-size: 16px; /* increases text size */
+    padding: 8px 12px; /* adds inner spacing */
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+}
+
+.a{
+    text-decoration: underline;
+    color: blue;
+}
+
+/* having issues moving the login h1 tag to the center due to the "block' of the login div class*/
