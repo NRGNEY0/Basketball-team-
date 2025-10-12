@@ -1,0 +1,57 @@
+body{
+    background-image: url(professional-basketball-arena-made-3d-600nw-1512115049.jpg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.Navbar{
+    border-bottom: 1px solid black;
+    height: 100px;
+    max-width: 106%;
+    background-color: grey;
+    margin-top: -15px;
+    margin-left: -8px;
+   
+    
+}
+
+.logo{
+    margin-left: -35px;
+}
+
+.hori{
+    list-style-type: none; /* removes bullet points */
+    display: flex; /*This makes  */
+    gap: 33px;
+    
+}
+
+.menu{
+    margin-top: 40px;
+    font-weight: 500;
+
+}
+
+a{
+    text-decoration: none; /* Removes all the underlines from all anchor tags*/
+    color: black;
+    font-size: larger;
+}
+
+li a:hover{
+    color: whitesmoke;
+}
+
+img{
+    border-radius: 50%;
+}
+
+.active{
+    color: orange;
+}
+
+.register{
+    
+}

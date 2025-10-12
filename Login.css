@@ -57,12 +57,15 @@ img{
     display: flex;
     flex-direction: column; /* Makes items stack vertically */
     gap: 10px; /* seperation between children elements */
-    border: 1px solid beige;
     width: 30%;
     margin: auto;
     margin-top: 13em;
     color: white;
     padding: 8px;
+}
+
+.login label input{
+    border: 1px solid beige;
 }
 
 .login input{
@@ -76,9 +79,17 @@ img{
 
 }
 
+.login h1{
+    border: none
+}
+
 .a{
     text-decoration: underline;
     color: blue;
 }
 
+.border{
+    border: 1px solid beige;
+    
+}
 /* having issues moving the login h1 tag to the center due to the "block' of the login div class*/
