@@ -93,3 +93,17 @@ img{
     
 }
 /* having issues moving the login h1 tag to the center due to the "block' of the login div class*/
+
+#btnLogin{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: orange;
+    width: 135px;
+    padding: 5px ;
+    margin: auto;
+    margin-top: 10px
+}
+
+#btnLogin:hover{
+    background-color: white;
+}

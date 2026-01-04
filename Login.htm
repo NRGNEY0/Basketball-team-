@@ -36,17 +36,19 @@
 
     <!--This will be the login form and if the user doesent have an account it wiill tell them to sign up -->
     
-    <div class="login">
+    <form class="login">
         <h1>Login</h1>
        
         <label for="Username"> Username </label>
-        <input type="text"  id="Username" placeholder="Enter Username">  <!-- Using an ID for both username and html tags so that will be referred to when using javascript-->
+        <input type="text"  id="LUsername" placeholder="Enter Username">  <!-- Using an ID for both username and html tags so that will be referred to when using javascript-->
 
         <label for="Password"> Password</label>
-        <input type="text" class="border" id="password" placeholder="Enter Password">
+        <input type="text" class="border" id="Lpassword" placeholder="Enter Password">
         
         <p>Dont have an account? <a href="Register.htm" class="a">Sign up</a></p> <!--Redirects the user to the register page if they dont have an account -->
-    </div> 
+        <button type="submit" id="btnLogin">Login</button>
+        
+    </form> 
 
 
 <script> src="script.js"</script>

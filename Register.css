@@ -52,7 +52,7 @@ img{
     color: orange;
 }
 
-.register{
+#register{
     display: flex;
     flex-direction: column; /* Makes items stack vertically */
     gap: 10px; /* seperation between children elements */
@@ -63,7 +63,7 @@ img{
     padding: 8px;
 }
 
-.register input{
+#register input{
     flex: 1; /* makes each element grow to fill the space equally */
     min-width: 150px; /* optional: prevents them from getting too small */
     height: 40px; /* increases height */
@@ -74,16 +74,18 @@ img{
 
 }
 
-.button{
+#btnCreate{
     border: 1px solid black;
     border-radius: 10px;
     background-color: orange;
     width: 135px;
-    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
     margin: auto;
     margin-top: 10px
 }
 
-.button:hover{
+#btnCreate:hover{
     background-color: white;
 }
