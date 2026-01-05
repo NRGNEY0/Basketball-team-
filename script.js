@@ -1,14 +1,13 @@
 
-console.log("js is running");
 // create account 
 const form = document.getElementById('register');
 form.addEventListener('submit', (event) => {
-    event.preventDefault; // Prevents the page from refreshing 
+    event.preventDefault(); // Prevents the page from refreshing 
     const username = document.getElementById('CUsername').value;
     const password = document.getElementById('CPassword').value;
 
 
-    if (!username || !password) { // checks to see if both username and password fields are filled 
+    if (username === ''|| password === '') { // checks to see if both username and password fields are filled 
         alert('Pleadse fill in all fields');
         return;
     }
@@ -26,16 +25,18 @@ form.addEventListener('submit', (event) => {
 })
 
 //Login
-document.getElementById("btnLogin").addEventListener('click', () => {
-    const Username = document.getElementById('LUsername').value;
-    const Password = document.getElementById("Lpassword").value;
+document.getElementById("Login").addEventListener('submit', (event) => {
+    event.preventDefault();
+    const username = document.getElementById('LUsername').value;
+    const password = document.getElementById("Lpassword").value;
 
     // check if user exeists
-    const storedPassword = localStorage.getItem(Username);
+    const storedPassword = localStorage.getItem(username);
 
     if (!storedPassword) {
         message.textContent = 'Account not found. Please create one';
-    } else if (storedPassword === Password) {
+    } else if (storedPassword === password) {
+        alert("Login")
         message.style.color = 'green';
         message.textContent = "Login Successful";
     } else {
