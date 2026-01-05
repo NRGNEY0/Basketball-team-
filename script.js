@@ -1,7 +1,6 @@
 
 // create account 
-const form = document.getElementById('register');
-form.addEventListener('submit', (event) => {
+document.getElementById('register').addEventListener('submit', (event) => {
     event.preventDefault(); // Prevents the page from refreshing 
     const username = document.getElementById('CUsername').value;
     const password = document.getElementById('CPassword').value;
@@ -25,21 +24,23 @@ form.addEventListener('submit', (event) => {
 })
 
 //Login
-document.getElementById("Login").addEventListener('submit', (event) => {
+document.getElementById("SignIn").addEventListener('submit', (event) => {
     event.preventDefault();
     const username = document.getElementById('LUsername').value;
     const password = document.getElementById("Lpassword").value;
 
+    // Making sure that all fields arent left blank 
+     if (username === '' || password === '') {
+        alert('Please fill in all fields')
+     }
     // check if user exeists
     const storedPassword = localStorage.getItem(username);
 
     if (!storedPassword) {
-        message.textContent = 'Account not found. Please create one';
+        alert("Account not found, please create one");
     } else if (storedPassword === password) {
-        alert("Login")
-        message.style.color = 'green';
-        message.textContent = "Login Successful";
+        alert("Login successful")
     } else {
-        message.textContent= 'incorrect password';
+        alert("incorrect password");
     }
 });

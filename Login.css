@@ -53,7 +53,7 @@ img{
     color: orange;
 }
 
-#Login{
+#SignIn{
     display: flex;
     flex-direction: column; /* Makes items stack vertically */
     gap: 10px; /* seperation between children elements */
@@ -64,11 +64,11 @@ img{
     padding: 8px;
 }
 
-#Login label input{
+#SignIn label input{
     border: 1px solid beige;
 }
 
-#Login input{
+#SignIn input{
     flex: 1; /* makes each element grow to fill the space equally */
     min-width: 150px; /* optional: prevents them from getting too small */
     height: 40px; /* increases height */
@@ -79,7 +79,7 @@ img{
 
 }
 
-#Login h1{
+#SignIn h1{
     border: none
 }
 
