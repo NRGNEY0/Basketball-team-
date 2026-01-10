@@ -1,13 +1,15 @@
 
 // create account 
-document.getElementById('register').addEventListener('submit', (event) => {
+const registerForm = document.getElementById('register');
+if (registerForm){
+registerForm.addEventListener('submit', (event) => {
     event.preventDefault(); // Prevents the page from refreshing 
     const username = document.getElementById('CUsername').value;
     const password = document.getElementById('CPassword').value;
 
 
     if (username === ''|| password === '') { // checks to see if both username and password fields are filled 
-        alert('Pleadse fill in all fields');
+        alert('Please fill in all fields');
         return;
     }
 
@@ -21,10 +23,16 @@ document.getElementById('register').addEventListener('submit', (event) => {
     // Stores the user 
     localStorage.setItem(username,password);
     alert("Account created successfully");
-})
+    
+    username = " ";
+    password = " ";
+});
+}
 
 //Login
-document.getElementById("SignIn").addEventListener('submit', (event) => {
+const loginForm = document.getElementById("SignIn")
+if (loginForm){
+    loginForm.addEventListener('submit', (event) => {
     event.preventDefault();
     const username = document.getElementById('LUsername').value;
     const password = document.getElementById("Lpassword").value;
@@ -44,3 +52,4 @@ document.getElementById("SignIn").addEventListener('submit', (event) => {
         alert("incorrect password");
     }
 });
+}
