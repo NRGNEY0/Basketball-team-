@@ -107,3 +107,17 @@ img{
 #btnLogin:hover{
     background-color: white;
 }
+
+.message{
+    margin-bottom: 8px;
+    font-size: 20px;
+    display: none;
+}
+
+.message.error{
+    color: red;
+}
+
+.message.success{
+    color: green;
+}
