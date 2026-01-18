@@ -4,14 +4,14 @@ const message = document.getElementById("message");
 function ShowMessage(text, type){ // text for the text it will show the user and type for the type of message either error or success 
     message.textContent = text; // Chamges the text in the div 
     message.className = `message ${type}` // changes the class of the div 
-    message.style.display = "block"; // makesthe message show 
+    message.style.display = "block"; // makes the message show 
 }
 
 // create account 
 const registerForm = document.getElementById('register');
 if (registerForm){
-registerForm.addEventListener('submit', (event) => {
-    event.preventDefault(); // Prevents the page from refreshing 
+registerForm.addEventListener('submit', async (event) => {
+    event.preventDefault()
     const username = document.getElementById('CUsername').value;
     const password = document.getElementById('CPassword').value;
 
@@ -31,7 +31,19 @@ registerForm.addEventListener('submit', (event) => {
     // Stores the user 
     localStorage.setItem(username,password);
     ShowMessage("Account created successfully", "success");
+    
 
+    const response = await fetch(registerForm.action, {
+       method: "POST",
+       body: new FormData(registerForm),
+       headers: {
+        "Accept" : "application/json"
+       }
+    });
+
+    if (response.ok){
+        ShowMessage("Message Sent", "success");
+    }
 
     
     event.target.reset() // clears out all input fields 
