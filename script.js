@@ -33,17 +33,6 @@ registerForm.addEventListener('submit', async (event) => {
     ShowMessage("Account created successfully", "success");
     
 
-    const response = await fetch(registerForm.action, {
-       method: "POST",
-       body: new FormData(registerForm),
-       headers: {
-        "Accept" : "application/json"
-       }
-    });
-
-    if (response.ok){
-        ShowMessage("Message Sent", "success");
-    }
 
     
     event.target.reset() // clears out all input fields 
@@ -77,6 +66,16 @@ if (loginForm){
 
     event.target.reset() //clears all the fields
 });
+}
+
+//Contact
+
+const Booking = document.getElementById("Booking");
+if (Booking){ 
+    Booking.addEventListener("submit", (event) =>{
+        ShowMessage("Booking submitted", "green") // if the contact variable isnt null it will submit the form(done in the html action) and show a confirmation message
+        event.target.reset()
+    })
 }
 
 
