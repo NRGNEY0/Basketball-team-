@@ -103,3 +103,7 @@ img{
 .message.success{
     outline-color: green;
 }
+
+h1{
+    width: 10;
+}
