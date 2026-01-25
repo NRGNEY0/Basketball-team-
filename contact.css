@@ -105,5 +105,5 @@ img{
 }
 
 h1 {
-    width: auto;
+    max-width: 90%;
 }
