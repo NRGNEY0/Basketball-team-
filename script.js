@@ -73,8 +73,10 @@ if (loginForm){
 const Booking = document.getElementById("Booking");
 if (Booking){ 
     Booking.addEventListener("submit", (event) =>{
+        event.preventDefault()
         ShowMessage("Booking submitted", "green") // if the contact variable isnt null it will submit the form(done in the html action) and show a confirmation message
-        event.target.reset()
+        Booking.onsubmit(); // Manual submit
+        Booking.reset()
     })
 }
 
