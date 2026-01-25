@@ -68,8 +68,12 @@ if (loginForm){
 });
 }
 
-//Contact
-
+const Booking = getElementById("Booking");
+if (Booking){
+    Booking.addEventListener("submit", (event) =>{
+       ShowMessage("Booking submitted" ,"green")
+    })
+}
 
 
 
